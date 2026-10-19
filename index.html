@@ -1,449 +1,579 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodi</title>
-    <link rel="icon" type="image/x-icon" href="./image/Group 25.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-
-<body>
+    <link rel="icon" type="image/x-icon" href="./image/Group 25.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link id="stylefile" rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
     <main>
-        <!-- =============header part start==============-->
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="/">
-                            <img src="./image/logo.png" alt="logo">
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Menu</a>
-                            </li>
-                            <li>
-                                <a href="">Services</a>
-                            </li>
-                            <li>
-                                <a href="">Offers</a>
-                            </li>
-                        </ul>
-                        <div>
-                            <button>
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                            <button class="cart-btn">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span>8</span>
-                            </button>
-                            <button class="content-btn">
-                                <i class="fa-solid fa-phone-volume"></i>
-                                <span>Contact</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- =============header part end==============-->
+      <div class="theme_box" title="change_theme">
+        <button id="lightbtn">Dark</button>
+      </div>
 
-        <!-- =============banner part start==============-->
-        <section id="hero">
-            <div class="container">
-                <div class="hero-wrapper">
-                    <div class="laft">
-                        <h1>Dive into Delights Of Delectable <span>Food</span></h1>
-                        <p>Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-                        <div class="area-btn">
-                            <button class="order-btn">Order Now</button>
-                            <button class="watch-btn">Watch Video
-                                <span>
+      <div class="order-r-btn" title="order-click-btn">
+        <button id="Order_Now">Order Now</button>
+      </div>
 
-                                    <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22.5 10.7987C24.5 11.9534 24.5 14.8401 22.5 15.9948L4.49999 26.3871C2.49999 27.5418 -1.34201e-06 26.0984 -1.24107e-06 23.789L-3.32543e-07 3.00442C-2.31596e-07 0.695016 2.5 -0.748354 4.5 0.406346L22.5 10.7987Z"
-                                            fill="#1E1E1E" />
-                                    </svg>
-
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <img class="small-responsive-img" src="./image/hero.png" alt="hero">
-                    </div>
-                </div>
+      <!-- =============header part start==============-->
+      <header>
+        <nav>
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="/">
+                <img src="./image/logo.png" alt="logo" />
+              </a>
+              <ul>
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Menu</a>
+                </li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li>
+                  <a href="">Offers</a>
+                </li>
+              </ul>
+              <div>
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>8</span>
+                </button>
+                <button class="content-btn">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <span>Contact</span>
+                </button>
+              </div>
             </div>
-        </section>
-        <!-- =============banner part end==============-->
+          </div>
+        </nav>
+      </header>
+      <!-- =============header part end==============-->
 
-        <!-- =============Catagories part start==============-->
-        <section id="catagories">
-            <div class="container">
-                <div class="title">
-                    <h4>Customer Favorites</h4>
-                    <h2>Popular Catagories</h2>
-                </div>
-                <div class="catagories-wrapper">
-                    <div class="catagories_items">
-                        <img src="./image/main.png" alt="main">
-                        <h3>Main Dish</h3>
-                        <h4>(86 dishes)</h4>
-                    </div>
-                    <div class="catagories_items">
-                        <img src="./image/break.png" alt="break">
-                        <h3>Break Fast</h3>
-                        <h4>(12 break fast)</h4>
-                    </div>
-                    <div class="catagories_items">
-                        <img src="./image/Dessert.png" alt="Dessert">
-                        <h3>Dessert</h3>
-                        <h4>(48 dessert)</h4>
-                    </div>
-                    <div class="catagories_items">
-                        <img src="./image/Browse.png" alt="Browse">
-                        <h3>Browse All</h3>
-                        <h4>(255 Items)</h4>
-                    </div>
-                </div>
+      <!-- =============banner part start==============-->
+      <section id="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="laft">
+              <h1>Dive into Delights Of Delectable <span>Food</span></h1>
+              <p>
+                Where Each Plate Weaves a Story of Culinary Mastery and
+                Passionate Craftsmanship
+              </p>
+              <div class="area-btn">
+                <button class="order-btn">Order Now</button>
+                <button class="watch-btn">
+                  Watch Video
+                  <span>
+                    <svg
+                      width="24"
+                      height="27"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.5 10.7987C24.5 11.9534 24.5 14.8401 22.5 15.9948L4.49999 26.3871C2.49999 27.5418 -1.34201e-06 26.0984 -1.24107e-06 23.789L-3.32543e-07 3.00442C-2.31596e-07 0.695016 2.5 -0.748354 4.5 0.406346L22.5 10.7987Z"
+                        fill="#1E1E1E"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
-        </section>
-        <!-- =============Catagories part end==============-->
-
-        <!-- =============Dishes part start==============-->
-        <section id="dishes">
-            <div class="container">
-                <div class="title-arrow-wrapper">
-                    <div class="title">
-                        <h4>Special Dishes</h4>
-                        <h2>Standout Dishes From Our Menu</h2>
-                    </div>
-                    <div>
-                        <button>
-
-                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.76453 2L2.00003 9.7645" stroke="#6F6E6E" stroke-width="4"
-                                    stroke-linecap="round" />
-                                <path d="M9.76453 18L2.00003 10.2355" stroke="#6F6E6E" stroke-width="4"
-                                    stroke-linecap="round" />
-                            </svg>
-
-                        </button>
-                        <button class="arrow-next-btn">
-
-                            <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2L9.7645 9.7645" stroke="white" stroke-width="4" stroke-linecap="round" />
-                                <path d="M2 18L9.7645 10.2355" stroke="white" stroke-width="4" stroke-linecap="round" />
-                            </svg>
-
-                        </button>
-                    </div>
-                </div>
-                <div class="dishes_items_wrapper">
-                    <div class="dishes_items">
-                        <img src="./image/Fattoush salad.png" alt="Fattoush salad">
-                        <div class="dishes_wishlist">
-
-                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
-                                    fill="white" />
-                            </svg>
-
-                        </div>
-
-                        <div class="text_area">
-                            <h3>Fattoush salad</h3>
-                            <h4>Description of the item</h4>
-                            <div class="dishes_price_rating">
-                                <h2 class="dishes_price"><span>$</span>24.00</h2>
-                                <h6>
-
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
-                                            fill="#FFE605" />
-                                    </svg>
-                                    4.9
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dishes_items">
-                        <img src="./image/Vegetable salad.png" alt="Vegetable salad">
-                        <div class="dishes_wishlist">
-
-                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
-                                    fill="white" />
-                            </svg>
-
-                        </div>
-
-                        <div class="text_area">
-                            <h3>Vegetable salad</h3>
-                            <h4>Description of the item</h4>
-                            <div class="dishes_price_rating">
-                                <h2 class="dishes_price"><span>$</span>26.00</h2>
-                                <h6>
-
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
-                                            fill="#FFE605" />
-                                    </svg>
-                                    4.6
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dishes_items">
-                        <img src="./image/Egg salad.png" alt="Egg salad">
-                        <div class="dishes_wishlist">
-
-                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
-                                    fill="white" />
-                            </svg>
-
-                        </div>
-
-                        <div class="text_area">
-                            <h3>Egg vegi salad</h3>
-                            <h4>Description of the item</h4>
-                            <div class="dishes_price_rating">
-                                <h2 class="dishes_price"><span>$</span>23.00</h2>
-                                <h6>
-
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
-                                            fill="#FFE605" />
-                                    </svg>
-                                    4.5
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="right">
+              <img
+                class="small-responsive-img"
+                src="./image/hero.png"
+                alt="hero"
+              />
             </div>
-        </section>
-        <!-- =============Dishes part end==============-->
+          </div>
+        </div>
+      </section>
+      <!-- =============banner part end==============-->
 
-        <!-- =============Testimonials part start==============-->
-        <section id="testimonials">
-            <div class="container">
-                <div class="testimonials_items_wrapper">
-                    <div class="laft">
-                        <img src="./image/Group 25.png" alt="testimonials pic">
-                    </div>
-                    <div class="right">
-                        <h4>Testimonials</h4>
-                        <h2>What Our Customers Say About Us</h2>
-                        <p>“I had the pleasure of dining at Foodi last night, and I'm still raving about the experience!
-                            The
-                            attention to detail in presentation and service was impeccable”</p>
-                        <div class="testimonials_wrapper">
-                            <img src="./image/Group 26.png" alt="profile">
-                            <div class="right">
-                                <h3>Customer Feedback</h3>
-                                <div class="rate">
-                                    <h4>
-
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
-                                                fill="#FFE605" />
-                                        </svg>
-
-                                    </h4>
-                                    <h6>4.9</h6>
-                                    <h5>(18.6k Reviews)</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- =============Catagories part start==============-->
+      <section id="catagories">
+        <div class="container">
+          <div class="title">
+            <h4>Customer Favorites</h4>
+            <h2>Popular Catagories</h2>
+          </div>
+          <div class="catagories-wrapper">
+            <div class="catagories_items">
+              <img src="./image/main.png" alt="main" />
+              <h3>Main Dish</h3>
+              <h4>(86 dishes)</h4>
             </div>
-        </section>
-        <!-- =============Testimonials part end==============-->
-
-        <!-- =============Services part start==============-->
-        <section id="services">
-            <div class="container">
-                <div class="services_items_wrapper">
-                    <div class="laft">
-                        <h4>Our Story & Services</h4>
-                        <h2>Our Culinary Journey And Services</h2>
-                        <p>Rooted in passion, we curate unforgettable dining experiences and offer exceptional services,
-                            blending culinary artistry with warm hospitality.</p>
-                        <button>Explore</button>
-                    </div>
-                    <div class="right">
-                        <div class="services_items_wrapper">
-                            <div class="delevery">
-                                <img src="./image/catering.png" alt="catering">
-                                <h3>Catering</h3>
-                                <h4>Delight your guests with our flavors and presentation</h4>
-                            </div>
-                            <div class="delevery">
-                                <img src="./image/catering.png" alt="catering">
-                                <h3>Catering</h3>
-                                <h4>Delight your guests with our flavors and presentation</h4>
-                            </div>
-                            <div class="delevery">
-                                <img src="./image/catering.png" alt="catering">
-                                <h3>Catering</h3>
-                                <h4>Delight your guests with our flavors and presentation</h4>
-                            </div>
-                            <div class="delevery">
-                                <img src="./image/catering.png" alt="catering">
-                                <h3>Catering</h3>
-                                <h4>Delight your guests with our flavors and presentation</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="catagories_items">
+              <img src="./image/break.png" alt="break" />
+              <h3>Break Fast</h3>
+              <h4>(12 break fast)</h4>
             </div>
-        </section>
-        <!-- =============Services part end==============-->
+            <div class="catagories_items">
+              <img src="./image/Dessert.png" alt="Dessert" />
+              <h3>Dessert</h3>
+              <h4>(48 dessert)</h4>
+            </div>
+            <div class="catagories_items">
+              <img src="./image/Browse.png" alt="Browse" />
+              <h3>Browse All</h3>
+              <h4>(255 Items)</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============Catagories part end==============-->
+
+      <!-- =============Dishes part start==============-->
+      <section id="dishes">
+        <div class="container">
+          <div class="title-arrow-wrapper">
+            <div class="title">
+              <h4>Special Dishes</h4>
+              <h2>Standout Dishes From Our Menu</h2>
+            </div>
+            <div>
+              <button>
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 12 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.76453 2L2.00003 9.7645"
+                    stroke="#6F6E6E"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9.76453 18L2.00003 10.2355"
+                    stroke="#6F6E6E"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <button class="arrow-next-btn">
+                <svg
+                  width="12"
+                  height="20"
+                  viewBox="0 0 12 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L9.7645 9.7645"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M2 18L9.7645 10.2355"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="dishes_items_wrapper">
+            <div class="dishes_items">
+              <img src="./image/Fattoush salad.png" alt="Fattoush salad" />
+              <div class="dishes_wishlist">
+                <svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div class="text_area">
+                <h3>Fattoush salad</h3>
+                <h4>Description of the item</h4>
+                <div class="dishes_price_rating">
+                  <h2 class="dishes_price"><span>$</span>24.00</h2>
+                  <h6>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
+                        fill="#FFE605"
+                      />
+                    </svg>
+                    4.9
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="dishes_items">
+              <img src="./image/Vegetable salad.png" alt="Vegetable salad" />
+              <div class="dishes_wishlist">
+                <svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div class="text_area">
+                <h3>Vegetable salad</h3>
+                <h4>Description of the item</h4>
+                <div class="dishes_price_rating">
+                  <h2 class="dishes_price"><span>$</span>26.00</h2>
+                  <h6>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
+                        fill="#FFE605"
+                      />
+                    </svg>
+                    4.6
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="dishes_items">
+              <img src="./image/Egg salad.png" alt="Egg salad" />
+              <div class="dishes_wishlist">
+                <svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 0C16.3739 0.0175149 15.2724 0.331853 14.3068 0.911271C13.3411 1.49069 12.5453 2.31467 12 3.3C11.4546 2.31467 10.6589 1.49069 9.69323 0.911271C8.72753 0.331853 7.62604 0.0175149 6.49999 0C4.70493 0.0779907 3.01369 0.863254 1.79577 2.18423C0.577848 3.50521 -0.0677617 5.25453 -1.11917e-05 7.05C-1.11917e-05 11.597 4.78599 16.563 8.79999 19.93C9.69621 20.6831 10.8293 21.096 12 21.096C13.1706 21.096 14.3038 20.6831 15.2 19.93C19.214 16.563 24 11.597 24 7.05C24.0677 5.25453 23.4221 3.50521 22.2042 2.18423C20.9863 0.863254 19.295 0.0779907 17.5 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div class="text_area">
+                <h3>Egg vegi salad</h3>
+                <h4>Description of the item</h4>
+                <div class="dishes_price_rating">
+                  <h2 class="dishes_price"><span>$</span>23.00</h2>
+                  <h6>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
+                        fill="#FFE605"
+                      />
+                    </svg>
+                    4.5
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============Dishes part end==============-->
+
+      <!-- =============Testimonials part start==============-->
+      <section id="testimonials">
+        <div class="container">
+          <div class="testimonials_items_wrapper">
+            <div class="laft">
+              <img
+                id="darkshadow"
+                src="./image/Group 25.png"
+                alt="testimonials pic"
+              />
+            </div>
+            <div class="right">
+              <h4>Testimonials</h4>
+              <h2>What Our Customers Say About Us</h2>
+              <p>
+                “I had the pleasure of dining at Foodi last night, and I'm still
+                raving about the experience! The attention to detail in
+                presentation and service was impeccable”
+              </p>
+              <div class="testimonials_wrapper">
+                <img src="./image/Group 26.png" alt="profile" />
+                <div class="right">
+                  <h3>Customer Feedback</h3>
+                  <div class="rate">
+                    <h4>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.3184 12.21L4.8784 14.81L3.5264 18.997C3.30792 19.6464 3.30515 20.349 3.51851 21.0001C3.73188 21.6512 4.14995 22.2159 4.7104 22.61C5.26126 23.0168 5.9288 23.2347 6.61356 23.2313C7.29832 23.2279 7.96365 23.0033 8.5104 22.591L11.9914 20.029L15.4734 22.588C16.0233 22.9925 16.6872 23.2121 17.3698 23.2155C18.0524 23.2188 18.7184 23.0056 19.2722 22.6065C19.8259 22.2075 20.2389 21.6431 20.4517 20.9945C20.6645 20.3459 20.6661 19.6466 20.4564 18.997L19.1044 14.81L22.6644 12.21C23.2135 11.8085 23.6218 11.2438 23.8307 10.5964C24.0397 9.94904 24.0388 9.2522 23.8281 8.6054C23.6174 7.9586 23.2076 7.39494 22.6574 6.99492C22.1072 6.5949 21.4447 6.37898 20.7644 6.37801H16.3914L15.0644 2.24201C14.8557 1.59097 14.4457 1.02303 13.8934 0.620078C13.3411 0.21713 12.6751 0 11.9914 0C11.3077 0 10.6417 0.21713 10.0894 0.620078C9.53714 1.02303 9.12708 1.59097 8.9184 2.24201L7.5914 6.37801H3.2224C2.54215 6.37898 1.8796 6.5949 1.32938 6.99492C0.779172 7.39494 0.369445 7.9586 0.158725 8.6054C-0.0519941 9.2522 -0.0529268 9.94904 0.15606 10.5964C0.365048 11.2438 0.773265 11.8085 1.3224 12.21H1.3184Z"
+                          fill="#FFE605"
+                        />
+                      </svg>
+                    </h4>
+                    <h6>4.9</h6>
+                    <h5>(18.6k Reviews)</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============Testimonials part end==============-->
+
+      <!-- =============Services part start==============-->
+      <section id="services">
+        <div class="container">
+          <div class="services_items_wrapper">
+            <div class="laft">
+              <h4>Our Story & Services</h4>
+              <h2>Our Culinary Journey And Services</h2>
+              <p>
+                Rooted in passion, we curate unforgettable dining experiences
+                and offer exceptional services, blending culinary artistry with
+                warm hospitality.
+              </p>
+              <button>Explore</button>
+            </div>
+            <div class="right">
+              <div class="services_items_wrapper">
+                <div class="delevery">
+                  <img src="./image/catering.png" alt="catering" />
+                  <h3>Catering</h3>
+                  <h4>Delight your guests with our flavors and presentation</h4>
+                </div>
+                <div class="delevery">
+                  <img src="./image/catering.png" alt="catering" />
+                  <h3>Catering</h3>
+                  <h4>Delight your guests with our flavors and presentation</h4>
+                </div>
+                <div class="delevery">
+                  <img src="./image/catering.png" alt="catering" />
+                  <h3>Catering</h3>
+                  <h4>Delight your guests with our flavors and presentation</h4>
+                </div>
+                <div class="delevery">
+                  <img src="./image/catering.png" alt="catering" />
+                  <h3>Catering</h3>
+                  <h4>Delight your guests with our flavors and presentation</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============Services part end==============-->
     </main>
     <!-- =============footer part start==============-->
     <footer>
-        <div class="container">
-            <div class="footer_wrapper">
-                <div>
-                    <img src="./image/logo.png" alt="footer">
-                    <p>Savor the artistry where every dish is a culinary masterpiece</p>
-                </div>
-                <div class="footer_items">
-                    <h3>Useful links</h3>
-                    <ul>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Events</a>
-                        </li>
-                        <li>
-                            <a href="#">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_items">
-                    <h3>Main Menu</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Offers</a>
-                        </li>
-                        <li>
-                            <a href="#">Menus</a>
-                        </li>
-                        <li>
-                            <a href="#">Reservation</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_items">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <a href="#">example@email.com</a>
-                        </li>
-                        <li>
-                            <a href="#">+64 958 248 966</a>
-                        </li>
-                        <li>
-                            <a href="#">Social media</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <svg width="17" height="28" viewBox="0 0 17 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.25 1.25H11.4318C9.74405 1.25 8.1254 1.92045 6.93209 3.11387C5.73863 4.30728 5.06818 5.9259 5.06818 7.61364V11.4318H1.25V16.5227H5.06818V26.7045H10.1591V16.5227H13.9773L15.25 11.4318H10.1591V7.61364C10.1591 7.27608 10.2932 6.95237 10.5319 6.71368C10.7705 6.475 11.0943 6.34091 11.4318 6.34091H15.25V1.25Z"
-                                    stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.25 17.1391C14.95 17.1391 17.1389 14.9502 17.1389 12.2502C17.1389 9.55016 14.95 7.36133 12.25 7.36133C9.54997 7.36133 7.36115 9.55016 7.36115 12.2502C7.36115 14.9502 9.54997 17.1391 12.25 17.1391Z"
-                                    stroke="#484848" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M1.25 17.1389V7.36111C1.25 3.98604 3.98604 1.25 7.36111 1.25H17.1389C20.5139 1.25 23.25 3.98604 23.25 7.36111V17.1389C23.25 20.5139 20.5139 23.25 17.1389 23.25H7.36111C3.98604 23.25 1.25 20.5139 1.25 17.1389Z"
-                                    stroke="#484848" stroke-width="2.5" />
-                                <path d="M18.9722 5.54069L18.9851 5.52637" stroke="#484848" stroke-width="2.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="29" height="24" viewBox="0 0 29 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M27.2501 1.26189C27.2501 1.26189 24.8653 2.67075 23.5392 3.07007C22.8274 2.25167 21.8815 1.67161 20.8293 1.40834C19.7771 1.14508 18.6695 1.21129 17.6562 1.59806C16.6429 1.98482 15.7728 2.67345 15.1637 3.57082C14.5544 4.4682 14.2356 5.53101 14.2501 6.61552V7.79734C12.1732 7.85119 10.1153 7.39057 8.2595 6.4565C6.40372 5.52243 4.80777 4.14391 3.61376 2.44371C3.61376 2.44371 -1.11351 13.0801 9.52285 17.8074C7.08893 19.4595 4.18949 20.2879 1.25012 20.171C11.8865 26.0801 24.8865 20.171 24.8865 6.58007C24.8854 6.25087 24.8537 5.92249 24.7919 5.59916C25.9981 4.40965 27.2501 1.26189 27.2501 1.26189Z"
-                                    stroke="#484848" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg width="30" height="22" viewBox="0 0 30 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.45 10.8355L12.725 13.5355V8.1355L17.45 10.8355Z" fill="#484848"
-                                    stroke="#484848" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M1.25 11.7903V9.87988C1.25 5.97115 1.25 4.01681 2.47241 2.75933C3.69484 1.50184 5.61936 1.44741 9.46838 1.33855C11.2923 1.28696 13.1554 1.25 14.75 1.25C16.3446 1.25 18.2078 1.28696 20.0316 1.33855C23.8806 1.44741 25.8051 1.50184 27.0276 2.75933C28.25 4.01681 28.25 5.97115 28.25 9.87988V11.7903C28.25 15.6989 28.25 17.6533 27.0276 18.9107C25.8051 20.1682 23.8807 20.2226 20.0317 20.3316C18.2078 20.3831 16.3446 20.4201 14.75 20.4201C13.1554 20.4201 11.2922 20.3831 9.46826 20.3316C5.61929 20.2226 3.69481 20.1682 2.4724 18.9107C1.25 17.6533 1.25 15.6989 1.25 11.7903Z"
-                                    stroke="#484848" stroke-width="2.5" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <h3>Copyright 2026 Dscode | All rights reserved</h3>
-            </div>
+      <div class="container">
+        <div class="footer_wrapper">
+          <div>
+            <img src="./image/logo.png" alt="footer" />
+            <p>Savor the artistry where every dish is a culinary masterpiece</p>
+          </div>
+          <div class="footer_items">
+            <h3>Useful links</h3>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Blogs</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_items">
+            <h3>Main Menu</h3>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Offers</a>
+              </li>
+              <li>
+                <a href="#">Menus</a>
+              </li>
+              <li>
+                <a href="#">Reservation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_items">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <a href="#">example@email.com</a>
+              </li>
+              <li>
+                <a href="#">+64 958 248 966</a>
+              </li>
+              <li>
+                <a href="#">Social media</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer_bottom">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="17"
+                  height="28"
+                  viewBox="0 0 17 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.25 1.25H11.4318C9.74405 1.25 8.1254 1.92045 6.93209 3.11387C5.73863 4.30728 5.06818 5.9259 5.06818 7.61364V11.4318H1.25V16.5227H5.06818V26.7045H10.1591V16.5227H13.9773L15.25 11.4318H10.1591V7.61364C10.1591 7.27608 10.2932 6.95237 10.5319 6.71368C10.7705 6.475 11.0943 6.34091 11.4318 6.34091H15.25V1.25Z"
+                    stroke="white"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.25 17.1391C14.95 17.1391 17.1389 14.9502 17.1389 12.2502C17.1389 9.55016 14.95 7.36133 12.25 7.36133C9.54997 7.36133 7.36115 9.55016 7.36115 12.2502C7.36115 14.9502 9.54997 17.1391 12.25 17.1391Z"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.25 17.1389V7.36111C1.25 3.98604 3.98604 1.25 7.36111 1.25H17.1389C20.5139 1.25 23.25 3.98604 23.25 7.36111V17.1389C23.25 20.5139 20.5139 23.25 17.1389 23.25H7.36111C3.98604 23.25 1.25 20.5139 1.25 17.1389Z"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                  />
+                  <path
+                    d="M18.9722 5.54069L18.9851 5.52637"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="29"
+                  height="24"
+                  viewBox="0 0 29 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.2501 1.26189C27.2501 1.26189 24.8653 2.67075 23.5392 3.07007C22.8274 2.25167 21.8815 1.67161 20.8293 1.40834C19.7771 1.14508 18.6695 1.21129 17.6562 1.59806C16.6429 1.98482 15.7728 2.67345 15.1637 3.57082C14.5544 4.4682 14.2356 5.53101 14.2501 6.61552V7.79734C12.1732 7.85119 10.1153 7.39057 8.2595 6.4565C6.40372 5.52243 4.80777 4.14391 3.61376 2.44371C3.61376 2.44371 -1.11351 13.0801 9.52285 17.8074C7.08893 19.4595 4.18949 20.2879 1.25012 20.171C11.8865 26.0801 24.8865 20.171 24.8865 6.58007C24.8854 6.25087 24.8537 5.92249 24.7919 5.59916C25.9981 4.40965 27.2501 1.26189 27.2501 1.26189Z"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="30"
+                  height="22"
+                  viewBox="0 0 30 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.45 10.8355L12.725 13.5355V8.1355L17.45 10.8355Z"
+                    fill="#484848"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.25 11.7903V9.87988C1.25 5.97115 1.25 4.01681 2.47241 2.75933C3.69484 1.50184 5.61936 1.44741 9.46838 1.33855C11.2923 1.28696 13.1554 1.25 14.75 1.25C16.3446 1.25 18.2078 1.28696 20.0316 1.33855C23.8806 1.44741 25.8051 1.50184 27.0276 2.75933C28.25 4.01681 28.25 5.97115 28.25 9.87988V11.7903C28.25 15.6989 28.25 17.6533 27.0276 18.9107C25.8051 20.1682 23.8807 20.2226 20.0317 20.3316C18.2078 20.3831 16.3446 20.4201 14.75 20.4201C13.1554 20.4201 11.2922 20.3831 9.46826 20.3316C5.61929 20.2226 3.69481 20.1682 2.4724 18.9107C1.25 17.6533 1.25 15.6989 1.25 11.7903Z"
+                    stroke="#484848"
+                    stroke-width="2.5"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <h3>Copyright 2026 Dscode | All rights reserved</h3>
+        </div>
+      </div>
     </footer>
     <!-- =============footer part end==============-->
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

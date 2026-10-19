@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
   max-width: 1420px;
   margin: 0 auto;
@@ -531,3 +530,110 @@ footer .footer_bottom h3{
   margin-left: 170px;
 }
 /* ==============foooter part end================ */
+
+/*==================theme left btn start=========== */
+.theme_box{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* আপনার থিম বক্সের পজিশন */
+.theme_box {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* প্রিমিয়াম ইউনিক বাটন ডিজাইন */
+#lightbtn {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  border: 2px solid #334155;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* মাউস হভার করলে গ্লো ইফেক্ট */
+#lightbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  border-color: #2196f3;
+}
+
+/* =======================================
+   DARK MODE ACTIVE STATES (ডার্ক মোড হলে)
+======================================= */
+body.dark-mode #lightbtn {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  color: #0f172a;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode #lightbtn:hover {
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
+  border-color: #cbd5e1;
+}
+/*==================theme left btn end=========== */
+
+/*==================order right btn start=========== */
+/* বাটনটিকে স্ক্রিনের ডানপাশে মাঝ বরাবর ফিক্সড করা */
+.order-r-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+/*লাল কার্ভড বাটন ডিজাইন */
+#Order_Now {
+  background: #d90429;
+  color: #ffffff;
+  border: none;
+  padding: 30px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.8px;
+  
+  /*দুটি কোণা গোল (Curve) করা */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  /* টেক্সটটিকে খাড়াখাড়ি বা Vertical করা*/
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px 0 20px rgba(217, 4, 41, 0.3); /* লালের সাথে ম্যাচিং শ্যাডো */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* মাউস hover করলে অ্যানিমেশন ইফেক্ট */
+#Order_Now:hover {
+  background: #ef233c;
+  padding-left: 20px;
+  box-shadow: -6px 0 25px rgba(217, 4, 41, 0.5);
+}
+
+/*==================order right btn end=========== */
