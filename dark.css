@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+body{
+   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+/* ==============herader part start================ */
+
+header {
+  margin-top: 47px;
+}
+header nav .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-wrapper ul {
+  display: flex;
+  gap: 60px;
+}
+header nav .nav-wrapper ul li {
+  list-style: none;
+}
+header nav .nav-wrapper ul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  transition: 0.4s;
+}
+header nav .nav-wrapper ul li a:hover {
+  color: #39db4a;
+}
+header nav .nav-wrapper button {
+  background: transparent;
+  border: none;
+  font-size: 23px;
+  color: white;
+}
+header nav .nav-wrapper .cart-btn {
+  margin-left: 46px;
+  margin-right: 43px;
+  position: relative;
+}
+header nav .nav-wrapper .cart-btn span {
+  width: 20px;
+  height: 20px;
+  background: #39db4a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+header nav .nav-wrapper .content-btn {
+  background: #39db4a;
+  color: #ffffff;
+  padding: 15px 27px 15px 32px;
+  border-radius: 40px;
+}
+header nav .nav-wrapper .content-btn span {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 14px;
+}
+/* ==============herader part end================ */
+
+/* ==============banner part start================ */
+#hero .hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 157px;
+}
+#hero .laft {
+  width: 50%;
+}
+#hero .right {
+  width: 50%;
+}
+#hero .laft h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 145.5%;
+  width: 596px;
+  color: white;
+  margin-bottom: 59px;
+}
+#hero .laft h1 span {
+  color: #39db4a;
+}
+#hero .laft p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 170.5%;
+  color: #EDFFEF;
+  width: 622px;
+}
+#hero .laft .area-btn {
+  display: flex;
+  margin-top: 71px;
+}
+#hero .laft button {
+  border: none;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+#hero .laft .order-btn {
+  background: #39db4a;
+  padding: 25px 47px 24px 47px;
+  border-radius: 40px;
+  color: #ffffff;
+  margin-right: 35px;
+  box-shadow: -2px 22px 38px 0px rgba(34, 157, 75, 0.602);
+  -webkit-box-shadow: -2px 22px 38px 0px rgba(25, 115, 41, 0.515);
+  -moz-box-shadow: -2px 22px 38px 0px rgba(74, 161, 81, 0.708);
+}
+#hero .laft .watch-btn {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+#hero .laft .watch-btn span {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 6px 27px 34px 0px rgba(104, 103, 103, 0.777);
+  -webkit-box-shadow: 6px 27px 34px 0px rgba(60, 59, 59, 0.173);
+  -moz-box-shadow: 6px 27px 34px 0px rgba(29, 27, 27, 0.388);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==============banner part end================ */
+
+/* ==============Catagories part start================ */
+#catagories .title {
+  text-align: center;
+}
+#catagories .title h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6868;
+  letter-spacing: 17.5%;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+#catagories .title h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+.catagories-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 208px;
+}
+#catagories .catagories_items {
+  text-align: center;
+  width: 326px;
+  box-shadow: 2px 10px 30px 0px rgba(28, 28, 28, 0.195);
+  -webkit-box-shadow: 2px 10px 30px 0px rgba(156, 150, 150, 0.537);
+  -moz-box-shadow: 2px 10px 30px 0px rgba(158, 148, 148, 0.601);
+  padding: 39px 0 46px;
+  border-radius: 40px;
+  margin-top: 78px;
+}
+#catagories .catagories_items h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+#catagories .catagories_items h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #EDFFEF;
+  margin-top: 12px;
+}
+.title h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6868;
+  letter-spacing: 17.5%;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+.title h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+/* ==============Catagories part end================ */
+
+/* ==============dishes part start================ */
+#dishes .title h2 {
+  line-height: 131.5%;
+  width: 580px;
+  margin-top: 40px;
+}
+#dishes button {
+  border: none;
+  background: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #efefef;
+}
+#dishes .arrow-next-btn {
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #39db4a;
+  margin-left: 50px;
+}
+#dishes .title-arrow-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.dishes_items_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+#dishes .dishes_items {
+  width: 446px;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 39px;
+  position: relative;
+  box-shadow: 2px 9px 42px 0px rgba(97, 96, 96, 0.635);
+}
+#dishes .dishes_items h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 19px;
+}
+#dishes .dishes_items h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #EDFFEF;
+}
+#dishes .dishes_price_rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+#dishes .dishes_items .text_area {
+  text-align: left;
+  padding-left: 46px;
+  padding-right: 44px;
+}
+.dishes_price {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #EDFFEF;
+}
+.dishes_price span {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6868;
+}
+#dishes .dishes_price_rating h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #c7c4c4;
+}
+.dishes_wishlist {
+  width: 87px;
+  height: 75px;
+  background: #39db4a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 42.5px;
+  border-top-right-radius: 37.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ==============dishes part end================ */
+
+/* ==============Testimonials part start================ */
+#testimonials{
+  margin-top: 221px;
+  margin-bottom: 227px;
+}
+#testimonials .testimonials_items_wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#testimonials .laft{
+  width: 50%;
+}
+#testimonials .right{
+  width: 50%;
+}
+#testimonials .laft #darkshadow{
+    border-radius: 40px;
+    box-shadow: 2px 9px 42px 0px rgba(97, 96, 96, 0.635);
+}
+#testimonials .right h4{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF6868;
+  letter-spacing: 17.5%;
+}
+#testimonials .right h2{
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  line-height: 131%;
+  margin-top: 53px;
+}
+#testimonials .right p{
+  font-family: "Inter", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  color: #EDFFEF;
+  line-height: 159%;
+  width: 655px;
+  margin-top: 29px;
+  margin-bottom: 67px;
+}
+.testimonials_wrapper{
+  display: flex;
+  align-items: center;
+}
+.testimonials_wrapper .right .rate{
+  display: flex;
+}
+.testimonials_wrapper .right h3{
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #EDFFEF;
+  margin-bottom: 13px;
+  margin-left: 44px;
+}
+.testimonials_wrapper .right .rate h5{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #c4c5c4;
+}
+.testimonials_wrapper .right .rate h6{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #EDFFEF;
+  margin-left: 15px;
+  margin-right: 17px;
+}
+/* ==============Testimonials part end================ */
+
+/* ==============Services part start================ */
+#services{
+  margin-bottom: 247.85px;
+}
+#services .services_items_wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#services .laft{
+  width: 48%;
+}
+#services .right{
+  width: 48%;
+}
+#services .laft h4{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF6868;
+  letter-spacing: 17.5%;
+}
+#services .laft h2{
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin-top: 53px;
+}
+#services .laft p{
+  font-family: "Inter", sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  color: #EDFFEF;
+  line-height: 160%;
+  width: 652px;
+  margin-top: 50px;
+}
+#services .laft button{
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #39DB4A;
+  border: none;
+  border-radius: 40px;
+  padding: 25px 60px 24px 60px;
+  margin-top: 53px;
+}
+#services .right .services_items_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-left: 85px;
+}
+#services .right .delevery{
+  text-align: center;
+  padding-top: 45px;
+  padding-right: 29px;
+  padding-left: 28px;
+  padding-bottom: 38.15px;
+  border-radius: 30px;
+  box-shadow: 7px 12px 43px 0px rgba(75, 73, 73, 0.372);
+}
+#services .right .delevery h3{
+   font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #5FE26C;
+  margin-top: 32px;
+}
+#services .right .delevery h4{
+   font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #90BD95;
+  width: 220px;
+  margin-top: 17px;
+}
+/* ==============Services part end================ */
+
+/* ==============foooter part start================ */
+footer p{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150.5%;
+  color: white;
+  width: 302px;
+  margin-top: 47.66px;
+}
+footer .footer_items h3{
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 36px;
+}
+footer .footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_items ul li{
+  list-style: none;
+  margin-bottom: 31px;
+}
+footer .footer_items ul li a{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #EDFFEF;
+  text-decoration: none;
+}
+footer .footer_bottom{
+  display: flex;
+  align-items: center;
+  margin-top: 99px;
+}
+footer .footer_bottom ul li{
+  list-style: none;
+}
+footer .footer_bottom ul li a{
+  width: 58px;
+  height: 57px;
+  background: #EDFFEF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+}
+footer .footer_bottom ul li a:hover{
+  background: #39DB4A;
+}
+footer .footer_bottom ul{
+  display: flex;
+  gap: 19px;
+}
+footer .footer_bottom h3{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-left: 170px;
+}
+/* ==============foooter part end================ */
+
+
+.theme_box{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* আপনার থিম বক্সের পজিশন */
+.theme_box {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* প্রিমিয়াম ইউনিক বাটন ডিজাইন */
+#lightbtn {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  border: 2px solid #334155;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* মাউস হভার করলে গ্লো ইফেক্ট */
+#lightbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  border-color: #2196f3;
+}
+
+/* =======================================
+   DARK MODE ACTIVE STATES (ডার্ক মোড হলে)
+======================================= */
+body.dark-mode #lightbtn {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  color: #0f172a;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode #lightbtn:hover {
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
+  border-color: #cbd5e1;
+}
+
+/*==================order right btn start=========== */
+/* বাটনটিকে স্ক্রিনের ডানপাশে মাঝ বরাবর ফিক্সড করা */
+.order-r-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+/*লাল কার্ভড বাটন ডিজাইন */
+#Order_Now {
+  background: #d90429;
+  color: #ffffff;
+  border: none;
+  padding: 30px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.8px;
+  
+  /*দুটি কোণা গোল (Curve) করা */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  /* টেক্সটটিকে খাড়াখাড়ি বা Vertical করা*/
+  writing-mode: vertical-rl; 
+  transform: rotate(180deg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px 0 20px rgba(217, 4, 41, 0.3); /* লালের সাথে ম্যাচিং শ্যাডো */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* মাউস hover করলে অ্যানিমেশন ইফেক্ট */
+#Order_Now:hover {
+  background: #ef233c;
+  padding-left: 20px;
+  box-shadow: -6px 0 25px rgba(217, 4, 41, 0.5);
+}
+
+/*==================order right btn end=========== */
